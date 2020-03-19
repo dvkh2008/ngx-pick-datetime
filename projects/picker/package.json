@@ -1,6 +1,13 @@
 {
   "name": "@dvkh2008/ngx-pick-datetime",
-  "version": "1.0.1",
+  "version": "1.0.3",
+  "license": "MIT",
+  "Homepage": "https://github.com/dvkh2008/ngx-pick-datetime",
+  "Repository": "https://github.com/dvkh2008/ngx-pick-datetime",
+  "keywords": [
+    "picker datetime",
+    "ngx-pick-datetime"
+  ],
   "peerDependencies": {
     "@angular/common": "^9.0.6",
     "@angular/core": "^9.0.6",

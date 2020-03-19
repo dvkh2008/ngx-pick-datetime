@@ -1,6 +1,13 @@
 {
   "name": "@dvkh2008/ngx-pick-datetime",
-  "version": "0.0.0",
+  "version": "1.0.3",
+  "license": "MIT",
+  "Homepage": "https://github.com/dvkh2008/ngx-pick-datetime",
+  "Repository": "https://github.com/dvkh2008/ngx-pick-datetime",
+  "keywords": [
+    "picker datetime",
+    "ngx-pick-datetime"
+  ],
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -10,7 +17,8 @@
     "e2e": "ng e2e",
     "build_lib": "ng build picker --prod",
     "npm_publish": "cd dist/picker && npm publish --access public",
-    "package": "npm run build_lib && npm run npm_publish"
+    "build_css": "mkdirp dist/picker/assets/style && node-sass --output-style=compressed projects/picker/src/sass/picker.scss > dist/picker/assets/style/picker.min.css",
+    "package": "npm run build_lib && npm run build_css && npm run npm_publish"
   },
   "private": true,
   "dependencies": {
@@ -47,6 +55,7 @@
     "karma-jasmine": "~2.0.1",
     "karma-jasmine-html-reporter": "^1.4.2",
     "ng-packagr": "^9.0.0",
+    "node-sass": "^4.13.1",
     "protractor": "~5.4.3",
     "ts-node": "~8.3.0",
     "tslint": "~5.18.0",
